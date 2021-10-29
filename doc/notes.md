@@ -15,8 +15,8 @@ Main definitions and assumptions:
 
 ## Tasks
 
-- [ ] Add a task following the default behavior
-- [ ] Add a task following the FIFO behavior
+- [x] Add a task following the default behavior
+- [x] Add a task following the FIFO behavior
 - [ ] Add a task following the priority behavior
 - [ ] List tasks by creation time
 - [ ] List tasks by priority
@@ -40,5 +40,5 @@ Now, I need to create a new namespace `task-manager.add-tasks` with functions
 for each functionality:
 
 - [x] Add tasks to task manager following the default behavior
-- [ ] Add tasks to task manager following the FIFO behavior
+- [x] Add tasks to task manager following the FIFO behavior
 - [ ] Add tasks to task manager following the priority behavior

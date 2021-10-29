@@ -6,3 +6,9 @@
   (if (< (count task-manager) utils/total-tasks)
     (concat task-manager [task])
     task-manager))
+
+(defn fifo-add
+  [task-manager task]
+  (if (< (count task-manager) utils/total-tasks)
+    (concat task-manager [task])
+    task-manager))
