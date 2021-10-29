@@ -1,5 +1,5 @@
 (ns task-manager.model
-  (:require [task-manager.utils :refer :all]))
+  (:require [task-manager.utils :as utils]))
 
 (defn- get-priority
   [priority]
@@ -7,7 +7,7 @@
 
 (defn new-task
   [priority command]
-  {:pid (uuid)
+  {:pid (utils/uuid)
    :priority (get-priority priority)
    :creation-time (new java.util.Date)
    :command command})

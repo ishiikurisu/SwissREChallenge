@@ -33,12 +33,12 @@ Main definitions and assumptions:
 
 First, I need to create a data structure for tasks.
 
-- [ ] Create task definition
-- [ ] Create task manager definition
+- [x] Create task definition
+- [x] Create task manager definition
 
 Now, I need to create a new namespace `task-manager.add-tasks` with functions
 for each functionality:
 
-- [ ] Add tasks to task manager following the default behavior
+- [x] Add tasks to task manager following the default behavior
 - [ ] Add tasks to task manager following the FIFO behavior
 - [ ] Add tasks to task manager following the priority behavior
