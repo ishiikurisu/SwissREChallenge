@@ -9,7 +9,7 @@ Main definitions and assumptions:
   - PID
   - Priority (low, medium, high)
   - Creation time
-  - Task definition
+  - Command
 - The task manager should be able handle a maximum number of processes
   defined at build time.
 
@@ -24,3 +24,21 @@ Main definitions and assumptions:
 - [ ] Kill a specific process
 - [ ] Kill all process with a specific priority
 - [ ] Kill all running processes
+
+### Extras
+
+- [ ] Enable Java interoperability
+
+# Development Notes
+
+First, I need to create a data structure for tasks.
+
+- [ ] Create task definition
+- [ ] Create task manager definition
+
+Now, I need to create a new namespace `task-manager.add-tasks` with functions
+for each functionality:
+
+- [ ] Add tasks to task manager following the default behavior
+- [ ] Add tasks to task manager following the FIFO behavior
+- [ ] Add tasks to task manager following the priority behavior
