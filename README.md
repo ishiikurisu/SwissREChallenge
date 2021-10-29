@@ -1,6 +1,6 @@
-# task-manager
+# SwissRE Challenge
 
-FIXME: description
+Task: develop a task manager
 
 ## Installation
 
@@ -30,7 +30,7 @@ FIXME: listing of options this app accepts.
 
 ## License
 
-Copyright © 2021 FIXME
+Copyright © 2021 Cristiano Silva Jr.
 
 This program and the accompanying materials are made available under the
 terms of the Eclipse Public License 2.0 which is available at
