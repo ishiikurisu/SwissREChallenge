@@ -33,7 +33,7 @@
           task-manager (-> (model/new-task-manager)
                            (fill-task-manager :low)
                            (add-task/fifo-add task))
-          task-found (reduce #(or %1 (= (:id task) (:id %2))) false task-manager)]
+          task-found (= (:pid task) (:pid (nth task-manager (dec utils/total-tasks))))]
       (is (= utils/total-tasks (count task-manager)))
       (is (true? task-found)))))
 

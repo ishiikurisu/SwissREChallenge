@@ -59,4 +59,4 @@ Something else: I think I spotted a bug on the FIFO addition.
 The implementation is currently the same as the default behavior,
 which doesn't seem right.
 
-- [ ] Assure FIFO addition is respected
+- [x] Assure FIFO addition is respected
