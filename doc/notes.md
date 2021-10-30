@@ -48,3 +48,15 @@ Next step is to list tasks.
 - [x] List tasks by creation time
 - [x] List tasks by priority
 - [x] List tasks by PID
+
+Next step is to kill processes:
+
+- [ ] Kill process by PID
+- [ ] Kill all processes with a specific priority
+- [ ] Kill all running processes
+
+Something else: I think I spotted a bug on the FIFO addition.
+The implementation is currently the same as the default behavior,
+which doesn't seem right.
+
+- [ ] Assure FIFO addition is respected
