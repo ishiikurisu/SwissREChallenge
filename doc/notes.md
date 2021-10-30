@@ -17,7 +17,7 @@ Main definitions and assumptions:
 
 - [x] Add a task following the default behavior
 - [x] Add a task following the FIFO behavior
-- [ ] Add a task following the priority behavior
+- [x] Add a task following the priority behavior
 - [ ] List tasks by creation time
 - [ ] List tasks by priority
 - [ ] List tasks by PID
@@ -41,4 +41,10 @@ for each functionality:
 
 - [x] Add tasks to task manager following the default behavior
 - [x] Add tasks to task manager following the FIFO behavior
-- [ ] Add tasks to task manager following the priority behavior
+- [x] Add tasks to task manager following the priority behavior
+
+Next step is to list tasks.
+
+- [ ] List tasks by creation time
+- [ ] List tasks by priority
+- [ ] List tasks by PID
