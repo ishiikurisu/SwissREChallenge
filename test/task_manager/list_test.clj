@@ -66,3 +66,12 @@
           are-ordered (verify-sort listed-tasks
                                    #(>= (:priority %1) (:priority %2)))]
       (is (true? are-ordered)))))
+
+(deftest list-tasks-by-pid
+  (testing "can list tasks by PID"
+    (let [task-manager (fill-task-manager (model/new-task-manager))
+          listed-tasks (list-task/by-pid task-manager)
+          are-ordered (verify-sort listed-tasks
+                                   #(< 0 (.compareTo (:pid %1)
+                                                     (:pid %2))))]
+      (is (true? are-ordered)))))

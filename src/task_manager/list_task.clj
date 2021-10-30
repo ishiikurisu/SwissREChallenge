@@ -8,3 +8,7 @@
 (defn by-priority
   [task-manager]
   (sort #(> (:priority %1) (:priority %2)) task-manager))
+
+(defn by-pid
+  [task-manager]
+  (sort #(< 0 (.compareTo (:pid %1) (:pid %2))) task-manager))

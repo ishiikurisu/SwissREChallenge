@@ -20,7 +20,7 @@ Main definitions and assumptions:
 - [x] Add a task following the priority behavior
 - [x] List tasks by creation time
 - [x] List tasks by priority
-- [ ] List tasks by PID
+- [x] List tasks by PID
 - [ ] Kill a specific process
 - [ ] Kill all process with a specific priority
 - [ ] Kill all running processes
@@ -47,4 +47,4 @@ Next step is to list tasks.
 
 - [x] List tasks by creation time
 - [x] List tasks by priority
-- [ ] List tasks by PID
+- [x] List tasks by PID
