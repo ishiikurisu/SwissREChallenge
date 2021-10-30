@@ -12,3 +12,7 @@
   (if (< (count task-manager) utils/total-tasks)
     (concat task-manager [task])
     task-manager))
+
+(defn priority-add
+  [task-manager task]
+  (take utils/total-tasks (sort #(< (:priority %1) (:priority %2)) (concat task-manager [task]))))
