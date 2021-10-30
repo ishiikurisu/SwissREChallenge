@@ -60,3 +60,11 @@ The implementation is currently the same as the default behavior,
 which doesn't seem right.
 
 - [x] Assure FIFO addition is respected
+
+Now that most of development is done, a few housekeeping would be
+welcome:
+
+- [ ] Update README.md
+- [ ] List more development thoughts on these notes
+- [ ] Remove unnecessary files from repository
+- [ ] Test Java interoperation
