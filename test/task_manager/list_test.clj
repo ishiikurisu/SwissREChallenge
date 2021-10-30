@@ -58,3 +58,11 @@
                                    #(< 0 (.compareTo (:creation-time %1)
                                                      (:creation-time %2))))]
       (is (true? are-ordered)))))
+
+(deftest list-tasks-by-priority
+  (testing "can list tasks by priority"
+    (let [task-manager (fill-task-manager (model/new-task-manager))
+          listed-tasks (list-task/by-priority task-manager)
+          are-ordered (verify-sort listed-tasks
+                                   #(>= (:priority %1) (:priority %2)))]
+      (is (true? are-ordered)))))

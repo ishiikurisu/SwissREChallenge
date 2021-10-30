@@ -18,8 +18,8 @@ Main definitions and assumptions:
 - [x] Add a task following the default behavior
 - [x] Add a task following the FIFO behavior
 - [x] Add a task following the priority behavior
-- [ ] List tasks by creation time
-- [ ] List tasks by priority
+- [x] List tasks by creation time
+- [x] List tasks by priority
 - [ ] List tasks by PID
 - [ ] Kill a specific process
 - [ ] Kill all process with a specific priority
@@ -45,6 +45,6 @@ for each functionality:
 
 Next step is to list tasks.
 
-- [ ] List tasks by creation time
-- [ ] List tasks by priority
+- [x] List tasks by creation time
+- [x] List tasks by priority
 - [ ] List tasks by PID
