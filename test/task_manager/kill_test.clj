@@ -38,7 +38,14 @@
                            (fill-task-manager)
                            (add-task/fifo-add task))]
       (is (contains-task? task-manager task))
-      (is (false? (contains-task? (kill-task/by-pid task-manager (:pid task)) task))))))
+      (is (false? (contains-task? (kill-task/by-pid task-manager (:pid task)) task)))))
+  (testing "killing tasks by inexistent PIDs don't affect the task manager"
+    (let [task (model/new-task :high "ls /")
+          task-manager (-> (model/new-task-manager)
+                           (fill-task-manager))]
+      (is (false? (contains-task? task-manager task)))
+      (is (false? (contains-task? (kill-task/by-pid task-manager (:pid task)) task)))) ; implies no error happened
+  ))
 
 (defn- contains-priority?
   [task-manager priority]
